@@ -70,7 +70,7 @@ ba_track_id: [niubencoolboy]
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "把想法转化成代码，把故事融进歌声里，<br>一个被声乐耽误的程序猿"
+sidebar-about-description: "把想法转化成代码<br>把故事融进歌声里<br>一个被声乐耽误的程序猿"
 sidebar-avatar: /img/avatar-niu.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
