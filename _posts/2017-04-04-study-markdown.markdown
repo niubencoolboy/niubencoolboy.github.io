@@ -1,15 +1,13 @@
 ---
-layout:     post
-title:      "学习使用markdown"
-date:       2017-04-04 00:10:00
-author:     "John Niu"
-header-img: "img/post-bg-rwd.jpg"
+layout: post
+title: "学习使用markdown"
+date: 2017-04-02 23:55:00
+author: "John Niu"
+header-img : "img/post-bg-rwd.jpg"
 tags:
-    - markdown
-    - 学习
+    - markdown   
+    - 学习    
 ---
-
-
 
 #### 四级标题
 ###### 六级标题
