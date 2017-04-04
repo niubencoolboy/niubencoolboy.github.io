@@ -1,24 +1,16 @@
 
 ---
 layout: post
-
 title: "学习使用markdown"
-
 date: 2017-04-02 23:55:00
-
 author: "John Niu"
-
 header-img : "img/post-bg-rwd.jpg"
-
-tags:
-    
+tags:  
     - markdown   
-    - 学习    
-    
+    - 学习       
 ---
 
-## markdow
-### 三级标题
+
 #### 四级标题
 ###### 六级标题
 *斜体*
