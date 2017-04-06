@@ -58,7 +58,7 @@ tags:
 
 
    1. 还需要安装openssl libpcap 由于这两个我都已经安装了，所以就不在介绍，方法与1. 2. 3. 类似。
-   2. 安装gcc g++ flex bison
+   1. 安装gcc g++ flex bison
    这些可以使用apt-get 进行安装。 
     
     ```
@@ -66,7 +66,7 @@ tags:
     eg:
     sudo apt-get install flex
     ```
-   3. 其他的依赖数据包可以
+   1. 其他的依赖数据包可以
     
     ```
     sudo apt-get -f install
