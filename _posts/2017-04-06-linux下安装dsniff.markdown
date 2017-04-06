@@ -105,12 +105,12 @@ tags:
 
     ```
     
-   问题原因：
-   安装[libnet 1.0](http://pkgs.fedoraproject.org/repo/pkgs/libnet/libnet-1.0.2a.tar.gz/ddf53f0f484184390e8c2a1bd0853667/libnet-1.0.2a.tar.gz)
-   安装步骤和以前一样。
-   把1.1.6 卸载 sudo make uninstall 
+    问题原因：
+    安装[libnet 1.0](http://pkgs.fedoraproject.org/repo/pkgs/libnet/libnet-1.0.2a.tar.gz/ddf53f0f484184390e8c2a1bd0853667/libnet-1.0.2a.tar.gz)
+    安装步骤和以前一样。
+    把1.1.6 卸载 sudo make uninstall 
     
- 2. 在安装libnet 1.0 时候 make出现如下错误：
+ 1. 在安装libnet 1.0 时候 make出现如下错误：
     
     ```
     ./install-sh doc/libnet.3
