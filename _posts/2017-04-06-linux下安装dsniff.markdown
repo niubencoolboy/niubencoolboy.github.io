@@ -135,11 +135,6 @@ tags:
     
 ### 7.总结
 
-   最后，还是没有安装成功，make 的时候arpspoof.c error 最后没办法，把之前安装的全部卸载。直接 
-    
-    ```
-    # sudo apt-get install dsniff
-    ```
-   系统自动安装了libnet1 libnids1.21
-   安装好后，dsniff -v 居然还是2.4 版本的。
+   最后，还是没有安装成功，make 的时候arpspoof.c error 最后没办法，把之前安装的全部卸载。直接`# sudo apt-get install dsniff`
+   系统自动安装了libnet1 libnids1.21。安装好后，dsniff -v 居然还是2.4 版本的。
    我的心都快要碎了。这个事让我明白，以后能apt-get 安装的，千万不要作死源码安装。
