@@ -14,7 +14,8 @@ tags:
 
 ### 1. 安装Berkeley DB
 
-   现在最新版是[Berkeley DB 6.2.23](http://download.oracle.com/berkeley-db/db-6.2.23.tar.gz)
+
+   现在最新版是[Berkeley DB 6.2.23](http://download.oracle.com/berkeley-db/db-6.2.23.tar.gz)
    ```
    # wget http://download.oracle.com/berkeley-db/db-6.2.23.tar.gz
    # tar zxvf db-6.2.23.tar.gz
@@ -27,7 +28,8 @@ tags:
    ```
     
 ### 2. 安装libnet 
-    
+
+
    网址[libnet](http://pkgs.fedoraproject.org/repo/pkgs/libnet/)
     
     ```
@@ -53,8 +55,8 @@ tags:
     
 ### 4. 安装其他软件
 
-   1.还需要安装openssl libpcap 
-   由于这两个我都已经安装了，所以就不在介绍，方法与1. 2. 3. 类似。
+
+   1. 还需要安装openssl libpcap 由于这两个我都已经安装了，所以就不在介绍，方法与1. 2. 3. 类似。
    2. 安装gcc g++ flex bison
    这些可以使用apt-get 进行安装。 
     
@@ -70,6 +72,7 @@ tags:
     ```
     
 ### 5.安装dsniff
+
 
    依赖的软件包安装完毕乎，终于可以安装dsniff了。步骤与1. 2. 3. 一样。先下载[dnsiff](https://www.monkey.org/~dugsong/dsniff/dsniff-2.3.tar.gz)
     
@@ -90,6 +93,7 @@ tags:
     
 ### 6. 遇到的错位
 
+
    1. 在第五步make的时候，发生如下错误：
     
     ```
@@ -106,7 +110,7 @@ tags:
    安装步骤和以前一样。
    把1.1.6 卸载 sudo make uninstall 
     
-   2.在安装libnet 1.0 时候 make出现如下错误：
+   2. 在安装libnet 1.0 时候 make出现如下错误：
     
     ```
     ./install-sh doc/libnet.3
@@ -128,11 +132,9 @@ tags:
 
    最后，还有没有安装成功，make 的时候arpspoof.c error 最后没办法，把之前安装的全部卸载。
    直接 
-    
     ```
     # sudo apt-get install dsniff
     ```
    系统自动安装了libnet1 libnids1.21
-    
    安装好后，dsniff -v 居然还是2.4 版本的。
    我的心都快要碎了。这个事让我明白，以后能apt-get 安装的，千万不要作死源码安装。
