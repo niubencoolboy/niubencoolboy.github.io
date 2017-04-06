@@ -71,6 +71,7 @@ tags:
     sudo apt-get -f install
     ```
     
+    
 ### 5.安装dsniff
 
 
@@ -91,7 +92,7 @@ tags:
     
     ```
     
-### 6. 遇到的错位
+### 6. 遇到的错误
 
 
  1. 在第五步make的时候，发生如下错误：
@@ -105,10 +106,12 @@ tags:
 
     ```
     
+    
     问题原因：
     安装[libnet 1.0](http://pkgs.fedoraproject.org/repo/pkgs/libnet/libnet-1.0.2a.tar.gz/ddf53f0f484184390e8c2a1bd0853667/libnet-1.0.2a.tar.gz)
     安装步骤和以前一样。
     把1.1.6 卸载 sudo make uninstall 
+    
     
  1. 在安装libnet 1.0 时候 make出现如下错误：
     
@@ -118,8 +121,10 @@ tags:
     make: *** [install] 错误 1
     ```
     
+    
     解决办法
     edit “Makefile” file and fix MAN_PREFIX variable
+    
     
     ```
     # vim Makefile
@@ -130,7 +135,8 @@ tags:
     
 ### 7.总结
 
-   最后，还有没有安装成功，make 的时候arpspoof.c error 最后没办法，把之前安装的全部卸载。
+   
+   最后，还是没有安装成功，make 的时候arpspoof.c error 最后没办法，把之前安装的全部卸载。
    直接 
     ```
     # sudo apt-get install dsniff
