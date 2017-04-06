@@ -26,6 +26,7 @@ tags:
     # sudo make install
     
     ```
+    
 ### 2. 安装libnet 
     
     网址[libnet](http://pkgs.fedoraproject.org/repo/pkgs/libnet/)
@@ -68,6 +69,7 @@ tags:
     ```
     sudo apt-get -f install
     ```
+    
 ### 5.安装dsniff
 
     依赖的软件包安装完毕乎，终于可以安装dsniff了。步骤与1. 2. 3. 一样。先下载[dnsiff](https://www.monkey.org/~dugsong/dsniff/dsniff-2.3.tar.gz)
