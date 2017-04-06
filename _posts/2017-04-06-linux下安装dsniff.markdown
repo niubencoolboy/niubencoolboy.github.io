@@ -135,9 +135,8 @@ tags:
     
 ### 7.总结
 
-   
-   最后，还是没有安装成功，make 的时候arpspoof.c error 最后没办法，把之前安装的全部卸载。
-   直接 
+   最后，还是没有安装成功，make 的时候arpspoof.c error 最后没办法，把之前安装的全部卸载。直接 
+    
     ```
     # sudo apt-get install dsniff
     ```
