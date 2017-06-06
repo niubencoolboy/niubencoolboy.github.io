@@ -3,7 +3,7 @@ layout: post
 title: "linux 下安装 dsniff"
 date: 2017-04-06 21:23:00
 author: "John Niu"
-header-img: "img/post-bg-study.jpg"
+header-img: "img/post-bg-os-metro.jpg"
 tags:
     - linux 学习
     - 攻击工具     
