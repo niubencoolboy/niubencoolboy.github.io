@@ -1,8 +1,8 @@
 #Hux Blog
 
-###[View Live Hux Blog &rarr;](https://huangxuan.me)
+###[View Live Hux Blog &rarr;](https://johnniu.me)
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
+![](http://johnniu.me/img/blog-desktop.jpg)
 
 
 
