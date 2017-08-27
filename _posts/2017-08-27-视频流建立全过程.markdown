@@ -51,30 +51,30 @@ UPNP服务响应采用HTTP/XML的形式描述设备的相信信息。
 	
 ><font color=red> OPTIONS rtsp://192.168.13.15/ch1/main/av_stream RTSP/1.0
 >CSeq: 1
->User-Agent: HIKVISION player NVR V3.4.82</font>
-><br>
+>User-Agent: HIKVISION player NVR V3.4.82 </font>
+></br>
 >RTSP/1.0 200 OK
 >CSeq: 1
 >Public: OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER
 >Date:  Fri, Aug 25 2017 14:00:05 GMT
-><br>
+></br>
 ><font color=red>DESCRIBE rtsp://192.168.13.15/ch1/main/av_stream RTSP/1.0
 >CSeq: 2
 >Accept: application/sdp
 >User-Agent: HIKVISION player NVR V3.4.82</font>
-><br>
+></br>
 >RTSP/1.0 401 Unauthorized
 >CSeq: 2
 >WWW-Authenticate: Digest realm="4419b65e39d0", nonce="b67c83f03b76a7aea24d021ae1c00e30", stale="FALSE"
 >WWW-Authenticate: Basic realm="4419b65e39d0"
 >Date:  Fri, Aug 25 2017 14:00:05 GMT
-><br>
+></br>
 ><font color=red>DESCRIBE rtsp://192.168.13.15/ch1/main/av_stream RTSP/1.0
 >CSeq: 3
 >Accept: application/sdp
 >Authorization: Basic YWRtaW46QWRtaW41MjI1MjI=
 >User-Agent: HIKVISION player NVR V3.4.82</font>
-><br>
+></br>
 >RTSP/1.0 200 OK
 >CSeq: 3
 >Content-Type: application/sdp
@@ -96,26 +96,26 @@ UPNP服务响应采用HTTP/XML的形式描述设备的相信信息。
 >a=fmtp:96 profile-level-id=420029; packetization-mode=1; sprop-parameter-sets=Z00AH5pmAoAt/zUBAQFAAAD6AAAw1AE=,aO48gA==
 >a=Media_header:MEDIAINFO=494D4B48010100000400010000000000000000000000000000000000000000000000000000000000;
 >a=appversion:1.0
-><br>
+></br>
 ><font color=red>SETUP rtsp://192.168.13.15/ch1/main/av_stream/trackID=1 RTSP/1.0
 >CSeq: 4
 >Transport: RTP/AVP/TCP;unicast;interleaved=0-1
 >Authorization: Basic YWRtaW46QWRtaW41MjI1MjI=
 >User-Agent: HIKVISION player NVR V3.4.82</font>
-><br>
+></br>
 >RTSP/1.0 200 OK  
 >CSeq: 4
 >Session:       1470203379;timeout=60
 >Transport: RTP/AVP/TCP;unicast;interleaved=0-1;ssrc=404fa5f3;mode="play"
 >Date:  Fri, Aug 25 2017 14:00:05 GMT
-><br>
+></br>
 ><font color=red>PLAY rtsp://192.168.13.15/ch1/main/av_stream RTSP/1.0
 >CSeq: 5
 >Range: npt=0.000-
 >Session:       1470203379
 >Authorization: Basic YWRtaW46QWRtaW41MjI1MjI=
 >User-Agent: HIKVISION player NVR V3.4.82</font>
-><br>
+></br>
 >RTSP/1.0 200 OK
 >CSeq: 5
 >Session:       1470203379
