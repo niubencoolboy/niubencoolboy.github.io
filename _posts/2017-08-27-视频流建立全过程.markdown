@@ -111,12 +111,12 @@ tags:
 >Transport: RTP/AVP/TCP;unicast;interleaved=0-1;ssrc=404fa5f3;mode="play"
 >Date:  Fri, Aug 25 2017 14:00:05 GMT
 >
->==PLAY rtsp://192.168.13.15/ch1/main/av_stream RTSP/1.0==
->==CSeq: 5==
->==Range: npt=0.000-==
->==Session:       1470203379==
->==Authorization: Basic YWRtaW46QWRtaW41MjI1MjI= ==
->==User-Agent: HIKVISION player NVR V3.4.82==
+>'PLAY rtsp://192.168.13.15/ch1/main/av_stream RTSP/1.0'
+>'CSeq: 5'
+>'Range: npt=0.000-'
+>'Session:       1470203379'
+>'Authorization: Basic YWRtaW46QWRtaW41MjI1MjI='
+>'User-Agent: HIKVISION player NVR V3.4.82'
 >
 >RTSP/1.0 200 OK
 >CSeq: 5
