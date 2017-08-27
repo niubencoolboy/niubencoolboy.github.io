@@ -49,10 +49,10 @@ UPNP服务响应采用HTTP/XML的形式描述设备的相信信息。
 
 #### 10. RTSP协议通信
 	
-><font color=red> OPTIONS rtsp://192.168.13.15/ch1/main/av_stream RTSP/1.0
->CSeq: 1
->User-Agent: HIKVISION player NVR V3.4.82 </font>
-></br>
+>==OPTIONS rtsp://192.168.13.15/ch1/main/av_stream RTSP/1.0==  
+>==CSeq: 1==
+>==User-Agent: HIKVISION player NVR V3.4.82==  
+
 >RTSP/1.0 200 OK
 >CSeq: 1
 >Public: OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER
