@@ -13,6 +13,7 @@ tags:
 	- ARP广播自己的地址
 	- 网关响应
 	![](img/170827/arpbroad.png) 
+	![](./img/170827/arpbroad.png)
 	![](img/170827/arpbroad02.png) 
 	
 2. 查询DNS 更新时间
