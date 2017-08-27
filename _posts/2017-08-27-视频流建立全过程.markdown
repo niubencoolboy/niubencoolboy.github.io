@@ -103,7 +103,7 @@ UPNP服务响应采用HTTP/XML的形式描述设备的相信信息。
 >Authorization: Basic YWRtaW46QWRtaW41MjI1MjI=
 >User-Agent: HIKVISION player NVR V3.4.82</font>
 ><br>
->RTSP/1.0 200 OK
+>RTSP/1.0 200 OK  
 >CSeq: 4
 >Session:       1470203379;timeout=60
 >Transport: RTP/AVP/TCP;unicast;interleaved=0-1;ssrc=404fa5f3;mode="play"
