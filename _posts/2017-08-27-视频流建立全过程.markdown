@@ -38,10 +38,9 @@ tags:
 	之后NVR（192.168.13.101）发送ARP单播相应。
 	
 #### 8. NVR 三次握手后 建立HTTP 请求
-	GET /upnpdevicedesc.xml HTTP/1.1\r\n
 	- TCP 三次握手
 	![](http://johnniu.com/img/170827/tcp.png) 
-	- 发起UPNP请求
+	- 发起UPNP请求 GET /upnpdevicedesc.xml HTTP/1.1\r\n
 	![](http://johnniu.com/img/170827/upnp.png) 
 	
 #### 9. 摄像头响应 http/xml UPNP
