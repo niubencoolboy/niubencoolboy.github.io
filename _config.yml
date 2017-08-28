@@ -90,37 +90,34 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "苏莉安",
-        href: "https://sulian.me/"
+        title: "Kevin Mitnick",
+        href: "https://mitnicksecurity.com/"
     },{
         title: "Dawn Song",
         href: "https://people.eecs.berkeley.edu/~dawnsong/"
     },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
+        title: "刘未鹏",
+        href: "http://mindhacks.cn/"
     },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
+        title: "IBM IOT",
+        href: "https://www.ibm.com/blogs/internet-of-things/"
     },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
+        title: "BlackHat",
+        href: "https://www.blackhat.com/"
     },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
+        title: "安全加",
+        href: "http://toutiao.secjia.com/"
     },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
+        title: "FREEBUF",
+        href: "http://www.freebuf.com/"
     },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
+        title: "welivesecurity",
+        href: "https://www.welivesecurity.com/"
     },{
-        title: "DHong Say",
-        href: "http://dhong.co"
+        title: "黑客技术",
+        href: "http://www.hackdig.com/"
     },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "初阳伊始",
-        href: "http://www.cnblogs.com/chuyangyishi/"
+        title: "黑客之门",
+        href: "http://www.hackerdoor.com/"
     }
 ]
