@@ -5,7 +5,7 @@
 ![](http://johnniu.com/img/404-bg.jpg)
 
 ----------------------------------------------------------------------------------------------------------------------
-The Blog theme forked from ![Huxpro/huxpro.github.io]https://github.com/Huxpro/huxpro.github.io
+The Blog theme forked from ![Huxpro/huxpro.github.io](https://github.com/Huxpro/huxpro.github.io)
 The initial  introductions as follows:
 
 ## Boilerplate (beta)
