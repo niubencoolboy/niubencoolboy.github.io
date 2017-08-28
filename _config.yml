@@ -70,7 +70,7 @@ ba_track_id: [niubencoolboy]
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "把想法转化成代码<br>把故事融进歌声里<br>一个被声乐耽误的程序猿"
+sidebar-about-description: "小时候想当警察，当飞行员<br>想成为一名作家，成为一名科学家<br>现在我是一名程序猿"
 sidebar-avatar: /img/avatar-niu.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -88,13 +88,13 @@ service-worker: true
 
 
 # Friends
-friends: [
+following: [
     {
-        title: "Su",
-        href: "http://su.gallery/"
+        title: "苏莉安",
+        href: "https://sulian.me/"
     },{
-        title: "乱序",
-        href: "http://mida.re/"
+        title: "Dawn Song",
+        href: "https://people.eecs.berkeley.edu/~dawnsong/"
     },{
         title: "前端外刊评论",
         href: "http://qianduan.guru/"
@@ -120,7 +120,7 @@ friends: [
         title: "尹峰以为",
         href: "http://ingf.github.io/"
     },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
+        title: "初阳伊始",
+        href: "http://www.cnblogs.com/chuyangyishi/"
     }
 ]
