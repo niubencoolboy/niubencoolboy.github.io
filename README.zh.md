@@ -1,3 +1,6 @@
+# 中文说明
+# 本网站采用Hux的github上的模板，再次特别申明，并表示感谢！关于模板的详细说明文档如下：
+
 # Hux blog 模板
 
 ### [我的博客在这里 &rarr;](http://huxpro.github.io)
