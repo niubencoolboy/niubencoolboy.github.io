@@ -3,7 +3,7 @@ layout: post
 title: "研二回京重返合唱团"
 date: 2017-05-06 周六
 author: "John Niu"
-header-img : "img/phdchorus/bg01.jpg"
+header-img : "img/phdchorus_min/bg01.jpg"
 tags:
     - 合唱团
     - diary
