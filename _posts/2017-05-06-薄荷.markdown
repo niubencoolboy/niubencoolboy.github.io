@@ -5,9 +5,10 @@ date: 2017-05-06 周六
 author: "John Niu"
 header-img : "img/phdchorus/bg00.jpg"
 tags:
-	- 合唱团
-	- diary
+    - 合唱团
+    - diary
 ---
+
 日志整理系列
 ---
 
