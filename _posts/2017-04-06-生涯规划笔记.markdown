@@ -5,7 +5,7 @@ date: 2017-06-06 23:00:00
 author: "John Niu"
 header-img: "img/post-bg-study.jpg" 
 tag:
-  - diary
+    - diary
 ---
 
 ### 前沿

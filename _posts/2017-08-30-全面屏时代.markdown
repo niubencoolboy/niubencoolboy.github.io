@@ -5,8 +5,8 @@ date: 2017-08-30 周三
 author: "John Niu"
 header-img : "img/mi_phone/mix2.jpg-large"
 tags:
- - 手机
- - 知乎
+    - 手机
+    - 知乎
 ---
 
 ## 前言：
