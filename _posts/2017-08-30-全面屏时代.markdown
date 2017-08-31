@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "全面屏时代：小米 MIX2  VS  苹果IPHONE 8 信息汇总与展望"
+title: "全面屏时代：小米 MIX 2  VS  苹果IPHONE 8 信息汇总与展望"
 date: 2017-08-30 周三
 author: "John Niu"
 header-img : "img/mi_phone/mix2.jpg-large"
