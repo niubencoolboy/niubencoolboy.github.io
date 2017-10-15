@@ -38,7 +38,7 @@ tags:
 
 奔驰 F 015 
 四座 酷到没朋友
-![](http://johnniu.com/img/cars/05.jgp)
+![](http://johnniu.com/img/cars/05.jpg)
 前排车座可以旋转，依然支持人工驾驶。
 ![](http://johnniu.com/img/cars/06.jpg)
 桌子和侧身都支持触摸屏显示，办公，娱乐非常方便。
