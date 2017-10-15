@@ -3,7 +3,7 @@ layout: post
 title: "未来无人驾驶汽车应用场景畅想"
 date: 2017-09-10 周日
 author: "John Niu"
-header-img : "img/cars/Sedric.jpg"
+header-img : "img/cars/03.gif"
 tags:
     - 无人驾驶
     - 知乎
@@ -28,7 +28,7 @@ tags:
 ![](http://johnniu.com/img/cars/01.png)
 
 可以无人驾驶，也可以体验驾驶快感。
-![](http://johnniu.com/cars/02.png)
+![](http://johnniu.com/img/cars/02.png)
 
 丰田 Concept-I
 两人座的 AI语音助手可以帮你自动打开车门，同时可以通过语音进行控制车辆。
