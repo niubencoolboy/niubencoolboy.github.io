@@ -3,7 +3,7 @@ layout: post
 title: "未来无人驾驶汽车应用场景畅想"
 date: 2017-09-10 周日
 author: "John Niu"
-header-img : "img/cars/05.jpg"
+header-img : "img/cars/Sedric.jpg"
 tags:
     - 无人驾驶
     - 知乎
@@ -25,7 +25,7 @@ tags:
 那么，未来的无人驾驶汽车到底会是什么样呢？让我们直接看几张汽车厂家推出的概念车。
 丰田 I-TRIL
 单人座
-![](http://johnniu.com/cars/01.png)
+![](img/cars/01.png)
 
 可以无人驾驶，也可以体验驾驶快感。
 ![](http://johnniu.com/cars/02.png)

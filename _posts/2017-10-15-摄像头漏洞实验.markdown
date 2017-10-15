@@ -58,12 +58,12 @@ Zoomeye 搜索 dork = “hikvision ip camera httpd”，选取一个IP，在浏�
 
 **展示**
 
-![image](http://johnniu.com/ipc_poc/cve_2017_7923_result.png)
+![image](img/ipc_poc/cve_2017_7923_result.png)
 
 ## 写POC
 ### 采用Pocsuite 框架
 
-![image](http://johnniu.com/ipc_poc/cve_2017_7923_poc1.png)
+![image](img/ipc_poc/cve_2017_7923_poc1.png)
 
 ![image](http://johnniu.com/ipc_poc/cve_2017_7923_poc2.png)
 
