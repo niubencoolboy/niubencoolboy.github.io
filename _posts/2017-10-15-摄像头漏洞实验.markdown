@@ -58,14 +58,14 @@ Zoomeye 搜索 dork = “hikvision ip camera httpd”，选取一个IP，在浏�
 
 **展示**
 
-![image](img/ipc_poc/cve_2017_7923_result.png)
+![](http://johnniu.com/img/ipc_poc/cve_2017_7923_result.png)
 
 ## 写POC
 ### 采用Pocsuite 框架
 
-![image](img/ipc_poc/cve_2017_7923_poc1.png)
+![](http://johnniu.com/img/ipc_poc/cve_2017_7923_poc1.png)
 
-![image](http://johnniu.com/ipc_poc/cve_2017_7923_poc2.png)
+![](http://johnniu.com/img/ipc_poc/cve_2017_7923_poc2.png)
 
 想了很久，除了拿到这个文件信息外，不知道怎么提权，所以最后放弃了。于是开始尝试换漏洞。
 
@@ -93,27 +93,27 @@ Dahua backdoor vulnerability，通过访问未授权的后门url,获取摄像头
 使用shodan 搜索（最近zoomeye api接口不能用了，所以用shodan 抓取IP） dork = “dahua ipc”。对IP发起get 请求 uri = /current_config/Account1 或者 uri = /current_config/passwd。摄像头会把存有的用户名、密码和相应用户对应的权限文件返回。
 
 请求返回的文件内容：
-![image](http://johnniu.com/ipc_poc/cve_2017_7925_show.png)
+![](http://johnniu.com/img/ipc_poc/cve_2017_7925_show.png)
 
 #### 采用Pocsuite 框架
 
-![image](http://johnniu.com/ipc_poc/cve_2017_7925_poc1.png)
+![](http://johnniu.com/img/ipc_poc/cve_2017_7925_poc1.png)
 
 
 ## 利用漏洞提权
 ### 利用原理
 请求返回的信息中包括session，username，password(加密的)等信息，将username，加密的密码encrypted_password，还有random三个组合起来，采用MD5加密后作为新的password，在同一session上发起请求，此时将通过认证，可以获取摄像头最高权限。
 
-![image](http://johnniu.com/ipc_poc/cve_2017_7925_exp.png)
+![](http://johnniu.com/img/ipc_poc/cve_2017_7925_exp.png)
 
 ### 采用Pocsuite 写attack方法
 
-![image](http://johnniu.com/ipc_poc/cve_2017_7925_poc2.png)
+![](http://johnniu.com/img/ipc_poc/cve_2017_7925_poc2.png)
 
 ## 自动化测试
 ### 获取IP
 最近实验室网络不知道怎么回事，特别卡（据说是因为十九大），zoomeye api也不能使用了，所以就试试shodan，买了年会员（今天shodan也上不去了），安装shodan的Python库，输入“dahua ipc”好像只有300左右，不过还好，够测试了。
-![image](http://johnniu.com/ipc_poc/getip.png)
+![](http://johnniu.com/img/ipc_poc/getip.png)
 
 ### 采用Pocsuite 多线程 测试
 #### verify 测试
@@ -121,30 +121,30 @@ Dahua backdoor vulnerability，通过访问未授权的后门url,获取摄像头
 ```
 pocsuite -r modules/dahua_ipc_backdoor_cve_2017_7925.py -f ipdir/dh-ipc.txt --verify --threads 50 --report dahua_verify_report.html
 ```
-![image](http://johnniu.com/ipc_poc/verify_success.png)
+![](http://johnniu.com/img/ipc_poc/verify_success.png)
 
 #### attack 测试
 
 ```
 pocsuite -r modules/dahua_ipc_backdoor_cve_2017_7925.py -f ipdir/dh-ipc.txt --attack --threads 50 --report dahua_attack_report.html
 ```
-![image](http://johnniu.com/ipc_poc/attack_success.png)
+![](http://johnniu.com/img/ipc_poc/attack_success.png)
 
 ## 结果展示
 ### Verify 展示
-![image](http://johnniu.com/ipc_poc/verify_show.png)
-详情见：[Report-dahua-verify-report.html](http://johnniu.com/ipc_poc/dahua_verify_report.html)
+![](http://johnniu.com/img/ipc_poc/verify_show.png)
+详情见：[Report-dahua-verify-report.html](http://johnniu.com/img/ipc_poc/dahua_verify_report.html)
 
 ### Attack 展示
-![image](http://johnniu.com/ipc_poc/attack_show.png)
-详情见：[Report-dahua-attack-report.html](http://johnniu.com/ipc_poc/dahua_attack_report.html)
+![](http://johnniu.com/img/ipc_poc/attack_show.png)
+详情见：[Report-dahua-attack-report.html](http://johnniu.com/img/ipc_poc/dahua_attack_report.html)
 
 ## 参考相关链接
 
-[1]. [https://www.zoomeye.org](https://www.zoomeye.org) 
-[2]. [https://www.seebug.org](https://www.seebug.org) 
-[3]. [https://www.shodan.io](https://www.shodan.io) 
-[4]. [https://github.com/knownsec/Pocsuite](https://github.com/knownsec/Pocsuite) 
+1. [https://www.zoomeye.org](https://www.zoomeye.org) 
+2. [https://www.seebug.org](https://www.seebug.org) 
+3. [https://www.shodan.io](https://www.shodan.io) 
+4. [https://github.com/knownsec/Pocsuite](https://github.com/knownsec/Pocsuite) 
 5. [http://www.exploit-db.com/exploits](http://www.exploit-db.com/exploits) 
 6. [http://www.cnvd.org.cn/webinfo/show/4172](http://www.cnvd.org.cn/webinfo/show/4172) 
 7. [http://toutiao.secjia.com/dahua-webcam-vulnerability-analysis-protection](http://toutiao.secjia.com/dahua-webcam-vulnerability-analysis-protection) 
