@@ -15,7 +15,7 @@ tags:
 
 **粗体**
 
-这是本人的博客 [John Niu](http://johnniu.com)
+这是本人的博客 [Johan Niu](https://johan.vip)
 
 - 无序列表1
 - 无序列表2
@@ -29,9 +29,7 @@ tags:
 
     左边有是个空格
     
-![我的头像](http://johnniu.com/img/avatar-niu.jpg)
-
-
+![我的头像](/img/avatar-niu.jpg)
 
 
 
