@@ -54,8 +54,8 @@ tags:
 一起租车环游国科大，骑着单车，喝着啤酒唱着歌。  
 ![](/img/phdchorus_min/09.jpg)   
 
-![](../img/phdchorus_min/07.jpg)  
+![](/img/phdchorus_min/07.jpg)  
 
-![](../img/phdchorus_min/08.jpg)  
+![](/img/phdchorus_min/08.jpg)  
 
 故事未完......
