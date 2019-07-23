@@ -29,7 +29,7 @@ tags:
 
     左边有是个空格
     
-![我的头像](/img/avatar-niu.jpg)
+![我的头像](http://niubencoolboy.github.io/img/avatar-niu.jpg)
 
 
 

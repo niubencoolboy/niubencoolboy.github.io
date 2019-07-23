@@ -7,6 +7,7 @@ header-img : "img/cars/03.gif"
 tags:
     - 无人驾驶
     - 知乎
+ 
 ---
 
 ## 前言
@@ -25,30 +26,34 @@ tags:
 那么，未来的无人驾驶汽车到底会是什么样呢？让我们直接看几张汽车厂家推出的概念车。
 丰田 I-TRIL
 单人座
-![](http://johnniu.com/img/cars/01.png)
+![](http://niubencoolboy.github.io/img/cars/01.png)
 
 可以无人驾驶，也可以体验驾驶快感。
-![](http://johnniu.com/img/cars/02.png)
+![](http://niubencoolboy.github.io/img/cars/02.png)
 
 丰田 Concept-I
 两人座的 AI语音助手可以帮你自动打开车门，同时可以通过语音进行控制车辆。
-![](http://johnniu.com/img/cars/03.gif)
+![](http://niubencoolboy.github.io/img/cars/03.gif)
+
 前面玻璃是一块触摸显示屏，是不是很酷。
-![](http://johnniu.com/img/cars/04.png)
+![](http://niubencoolboy.github.io/img/cars/04.png)
 
 奔驰 F 015 
 四座 酷到没朋友
-![](http://johnniu.com/img/cars/05.jpg)
+![](http://niubencoolboy.github.io/img/cars/05.jpg)
+
 前排车座可以旋转，依然支持人工驾驶。
-![](http://johnniu.com/img/cars/06.jpg)
+![](http://niubencoolboy.github.io/img/cars/06.jpg)
+
 桌子和侧身都支持触摸屏显示，办公，娱乐非常方便。
-![](http://johnniu.com/img/cars/07.jpg)
+![](http://niubencoolboy.github.io/img/cars/07.jpg)
 
 大众 Sedric
 第五等级自动驾驶（完全自动驾驶，无人驾驶的最高等级）
-![](http://johnniu.com/img/cars/Sedric.jpg)
+![](http://niubencoolboy.github.io/img/cars/Sedric.jpg)
+
 没有方向盘或者脚踏板等传统汽车上的结构
-![](http://johnniu.com/img/cars/Sedric_02.jpg)
+![](http://niubencoolboy.github.io/img/cars/Sedric_02.jpg)
 
 #### 无人驾驶汽车的应用场景
 
@@ -57,24 +62,24 @@ tags:
 ##### 衣食方向的应用场景
 既然无人驾驶汽车是一个超级移动智能载人终端，那么在现在的移动智能设备上能够解决的衣食问题，同样在无人驾驶汽车上都能够解决，而且无人驾驶汽车解决的更加出色。
 ###### 假象场景：
-![](http://johnniu.com/img/cars/08.jpg)
+![](http://niubencoolboy.github.io/img/cars/08.jpg)
 
 比如你现在乘坐这样的无人驾驶汽车去参加一个party,觉得自己的服装不太合适，你可以通过车载操作系统进行网上购物，选择喜欢的衣服下单后，无人送货机携带你的订单与无人驾驶汽车进行通信协商，将你的物品送至你未来经过的道路上。party结束后，回去的路上发现没有吃饱，可以通过车载系统进行点餐和购买零食，提交订单后，无人送货机会从离你最近的无人超市进行提货，然后送至你未来的路上。
 （之前我曾经想过在无人驾驶汽车里设置一块商品地，拥有部分移动超市的属性，但是后来想想，汽车内的空间毕竟有限，这些有限的空间可以用来提升座位的舒适度，可以增加座位等各种使用方案，这样远远比设置商品地更有价值。而且在无人驾驶汽车普及之前，无人超市/无人运输机一定已经商业化，将衣食问题交给他们来做就行，无人驾驶汽车只需要提供流量的入口，与其他系统的交互通信即可。）
 ##### 住（场所）的应用场景
 无人驾驶汽车不仅仅是一个移动智能终端，流量的入口，更是一个会移动的拥有物理空间的场所。既然是一个场所，那么就可以实现场所的功能——住/办公/娱乐。现在许多房车都已经将住（也就是这块场所）的应用发挥到了极致。如下图：福特 E 450 内部装饰
-![](http://johnniu.com/img/cars/09.png)
+![](http://niubencoolboy.github.io/img/cars/09.png)
 
 随着技术的发展，我相信在这块“场地”上的创新将会非常类似于从诺基亚到iphone的进化。操作系统更加智能，操作更加方便（按键到触摸屏操作的进化，未来将会变成AI语言操作控制）。
 如上上图以及上面奔驰 F 015侧身的放大图。 
-![](http://johnniu.com/img/cars/10.jpg)
+![](http://niubencoolboy.github.io/img/cars/10.jpg)
 
 ##### 社交方向的应用场景
 线下场所可以进行社交，而且是一种历史悠久也是最重要的社交方式；移动互联网时代，通过智能手机的社交方式变得越来越不可或缺；那么作为一个超级智能载入终端，同时拥有移动场所的无人驾驶汽车，当然可以社交，而且这样的社交令人充满期待。
 
 **假象场景：**
 
-![](http://johnniu.com/img/cars/08.jpg)
+![](http://niubencoolboy.github.io/img/cars/08.jpg)
 
 还是这张图，如果两个人现在乘坐的是一台共享的无人驾驶汽车（后面会说），两人互不相识，刚开始中间有一个屏风。前面的车载操作系统有一个交友软件，提示你旁边有新的顾客，你可以提前查看这个顾客的基本信息，如果有意相识，发起解除屏风/会面请求。两个人呢如果谈的来，无人驾驶汽车自动导航去附近的宾馆，或者直接车里papapap（太污了，不敢往下想了）。再回过头看看陌陌这种交友软件和世纪佳缘这种相亲网站是不是都弱爆了。
 （其实现在有一些滴滴平台的专车司机无聊的时候开着豪车跑路，专门接一些年轻漂亮的女用户，一边赚个外快，一边社交，此处略去若干字……）

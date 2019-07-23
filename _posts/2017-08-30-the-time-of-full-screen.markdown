@@ -7,6 +7,7 @@ header-img : "img/mi_phone/mix2.jpg-large"
 tags:
     - 手机
     - 知乎
+
 ---
 
 ## 前言：
@@ -19,31 +20,31 @@ tags:
 #### 1. 小米 MIX2 
 不废话，先上图：
 首先这张：
-![](http://johnniu.com/img/mi_phone/mix200.jpg) 
+![](http://niubencoolboy.github.io/img/mi_phone/mix200.jpg) 
 是不是很想看下面到底还剩多少？来来：
-![](http://johnniu.com/img/mi_phone/mix2.jpg-large) 
+![](http://niubencoolboy.github.io/img/mi_phone/mix2.jpg-large) 
 看到这个图，有没有惊呆了。横着看：
-![](http://johnniu.com/img/mi_phone/mix202.jpg-large) 
+![](http://niubencoolboy.github.io/img/mi_phone/mix202.jpg-large) 
 三连看：
-![](http://johnniu.com/img/mi_phone/mix03.jpg-large) 
+![](http://niubencoolboy.github.io/img/mi_phone/mix03.jpg-large) 
 正反看：
-![](http://johnniu.com/img/mi_phone/mix04.jpg-large) 
+![](http://niubencoolboy.github.io/img/mi_phone/mix04.jpg-large) 
 是不是GG了，不要急，如果你可以翻强去youtube,小米MIX2的设计师Stark已经曝光了[MIX2 外观设计视频](http://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3DomZNPSMw7MQ%26feature%3Dyoutu.be) ，[设计师讲解](http://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3DohaJrWpAgRI) 。
 为了方便不能翻墙的人，我特意去国内的网上找了两个还不错的视频贴上。
 [资讯100秒：小米MIX2确定9月11日发布，对阵 iPhone8](https://www.bilibili.com/video/av13989150/?from=search&seid=8256088712829098932) 
 #### 2. 苹果 iphone 8
 做好准备：
 看一半：
-![](http://johnniu.com/img/mi_phone/ip02.jpg) 
+![](http://niubencoolboy.github.io/img/mi_phone/ip02.jpg) 
 下巴到底怎么样？据说是这样的：
-![](http://johnniu.com/img/mi_phone/ip04.jpg) 
+![](http://niubencoolboy.github.io/img/mi_phone/ip04.jpg) 
 下面是无线充电。
 三连看：
-![](http://johnniu.com/img/mi_phone/ip02.jpg-large) 
+![](http://niubencoolboy.github.io/img/mi_phone/ip02.jpg-large) 
 正反全身看：
-![](http://johnniu.com/img/mi_phone/ip03.jpg) 
+![](http://niubencoolboy.github.io/img/mi_phone/ip03.jpg) 
 再科幻一点是这样的：（可信度不高）
-![](http://johnniu.com/img/mi_phone/ip03.jpg-large) 
+![](http://niubencoolboy.github.io/img/mi_phone/ip03.jpg-large) 
 同样附上一段视频：
 [科技60秒：iPhone 8将推动苹果手机增长：国人将疯狂买单](https://www.bilibili.com/video/av13984148/?from=search&seid=16627469963800005469) 
 ### 特色
