@@ -134,7 +134,7 @@ pocsuite -r modules/dahua_ipc_backdoor_cve_2017_7925.py -f ipdir/dh-ipc.txt --at
 ## 结果展示
 ### Verify 展示
 ![](http://niubencoolboy.github.io/img/ipc_poc/verify_show.png)
-详情见：[Report-dahua-verify-report.html](http://johnniu.com/img/ipc_poc/dahua_verify_report.html)
+详情见：[Report-dahua-verify-report.html](http://niubencoolboy.github.io/img/ipc_poc/dahua_verify_report.html)
 
 ### Attack 展示
 ![](http://niubencoolboy.github.io/img/ipc_poc/attack_show.png)
