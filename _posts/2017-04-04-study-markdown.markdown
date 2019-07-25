@@ -5,7 +5,6 @@ date: 2017-04-02 23:55:00
 author: "John Niu"
 header-img : "img/post-bg-rwd.jpg"
 tags:
-    - markdown   
     - 学习    
 ---
 

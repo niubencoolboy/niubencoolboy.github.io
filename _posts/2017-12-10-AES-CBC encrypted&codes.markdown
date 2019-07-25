@@ -7,7 +7,7 @@ header-img : "img/170827/bg.jpg"
 tags:
     - 安全
     - 算法
-    - 学习
+    - Python
  
 ---
 
