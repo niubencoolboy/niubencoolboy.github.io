@@ -1,0 +1,154 @@
+---
+layout: post
+title: "Git 使用小结"
+date: 2018-01-14 20:00:00
+author: "Johan Niu"
+header-img : "img/blogs/git_logo.png"
+tags:
+    - 学习
+ 
+---
+
+## Git 使用小结
+
+### 一 初始操作
+
+#### 1.1 Git配置
+##### 1.1.1 配置文件
+
+	/etc/gitconfig 文件：包含了适用于系统所有用户和所有库的值。如果你传递参数选项’—system’ 给 git config，它将明确的读和写这个文件。 
+	
+	~/.gitconfig 文件 ：具体到你的用户。你可以通过传递—global 选项使Git 读或写这个特定的文件。
+	
+	位于git目录的config文件 (也就是 .git/config) ：无论当前在用的库是什么，特定指向该单一的库。每个级别重写前一个级别的值。
+	因此，在.git/config中的值覆盖了在/etc/gitconfig中的同一个值。
+
+##### 1.1.2 配置用户名与邮箱
+
+	Git global setup
+	git config --global user.name "test"
+	git config --global user.email "test@qq.com"
+
+	如果传递了 --global 选项，因为Git将总是会使用该信息来处理在系统中所做的一切操作。
+	如果希望在一个特定的项目中使用不同的名称或e-mail地址，可以在该项目中运行该命令而不要--global选项。
+
+##### 1.1.3 检查配置
+
+	git config --list
+
+##### 1.1.4 修改配置
+
+添加配置项
+
+格式如下：
+	
+	git config [–local|–global|–system] –add section.key value(默认是添加在 local 配置中)
+section, key, value 一项都不能少，否则添加失败。
+	
+	git config -–add site.name test
+	
+删除配置项
+
+格式如下：
+
+	git config [–local|–global|–system] –unset section.key
+	
+例子：
+
+	git config --local -–unset site.name
+
+#### 1.2 Git项目初始化
+
+##### 1.2.1 Create a new repository
+
+	git clone git@xxxx.com:user/test.git
+	cd test
+	touch README.md
+	git add README.md
+	git commit -m "add README"
+	git push -u origin master
+	
+
+##### 1.2.2 Existing folder
+
+	cd existing_folder
+	git init
+	git remote add origin git@git.xiaojukeji.com:niuyuehan/test.git
+	git add .
+	git commit -m "Initial commit"
+	git push -u origin master
+
+
+##### 1.2.3 Existing Git repository
+
+	cd existing_repo
+	git remote rename origin old-origin
+	git remote add origin git@git.xiaojukeji.com:niuyuehan/test.git
+	git push -u origin --all
+	git push -u origin --tags
+
+### 二 进阶操作
+
+#### 2.1 提交基本动作
+
+	git status
+	
+	git add
+	
+	git commit -m "test"
+	
+	git push origin master
+	
+#### 2.2 分支
+
+查看分支：
+	
+	git branch
+
+创建分支：
+	
+	git branch name
+
+切换分支：
+
+	git checkout name
+
+创建+切换分支：
+	
+	git checkout –b name
+
+删除分支：
+	
+	git branch –d name
+
+合并某分支到当前分支：
+	
+	git merge name
+
+分支出现冲突时候，查看冲突文件：
+
+Git用`<<<<<<<`，`=======`，`>>>>>>>`标记出不同分支的内容，
+其中`<<<<`HEAD是指主分支修改的内容，`>>>>>`待合并分支  
+
+查看分支合并的情况，使用命令 `git log`
+
+比较文件不同，可以使用`git diff`
+
+#### 2.3 撤销与覆盖	
+
+撤销，可以丢弃工作区的修改：
+
+	git checkout --file
+	
+	
+强制覆盖
+
+	git reset --hard 版本号
+
+例如，从远程Git获取最新版本，强制更新：
+
+	git fetch --all
+	git reset --hard origin/master
+	git pull
+	
+	
