@@ -3,7 +3,7 @@ layout: post
 title: "再读C++的设计艺术(1)"
 date: 2018-03-11 21:00:00
 author: "Johan Niu"
-header-img : "img/blogs/c++_logo.jpeg"
+header-img : "img/blogs/c++_logo.jpg"
 tags:
     - 学习
     - C++
