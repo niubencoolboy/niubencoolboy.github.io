@@ -1,0 +1,90 @@
+---
+layout: post
+title: "再读C++的设计艺术(2)"
+date: 2018-03-25 20:00:00
+author: "Johan Niu"
+header-img : "img/blogs/c++_logo.jpg"
+tags:
+    - 学习
+    - C++
+       
+---
+
+# 再读C++的设计艺术(2)
+
+## 1 inline函数的设计
+
+Bjarne Stroustrup（C++作者特别讨厌C里的宏定义），比如以下代码：
+
+
+	#define max(x,y) (x)>(y)?(x):(y);
+	
+	
+	...
+	
+	
+	int c = max(int a, int b)
+
+C中实现宏定义，代码真正执行的时候，其实是 
+
+	int c = (x)>(y)?(x):(y);
+
+这样相比传统的声明函数，定义函数，调用函数，**编译器无法对宏定义函数max进行检查了**，
+
+没有了编译器的检查，往往很多错误就出现在宏定义。
+
+但是如果不实现宏定义，使用传统的函数声明，定义，调用，
+当频繁调用时候（比如我for循环1亿次），这样就会**造成频繁的调用，进栈出栈操作**。
+
+所以Bjarne Stroustrup在C++中使用**inline**关键字，如下：
+
+	inline unsigned long AddOne(unsigned long x, unsigned long y)
+	{
+	    return x += y;
+	} 
+	
+	
+	void main()
+	{
+	    unsigned long a = 0;
+		for(unsigned long i = 0; i < 1000000000; i++)
+		{
+			a = AddOne(a, i)
+		}
+		count<<"a = "<<a<<endl;
+	}
+
+上面这段代码在编辑器编译时候，会对inline函数AddOne进行编译器校验，但是执行的时候，代码为如下：
+
+	void main()
+	{
+	    unsigned long a = 0;
+		for(unsigned long i = 0; i < 1000000000; i++)
+		{
+			a = a + i
+		}
+		count<<"a = "<<a<<endl;
+	}
+
+这样既解决了C语言中宏定义没有编译器对函数校验的问题，同时保证了宏定义的执行速度优势。
+
+
+	inline函数：有类型检查的宏，没有标准函数的运行时内存结构。
+	
+	注意：inline在有的版本中，只有release版本才会生效。
+
+## 2 嵌套与调用
+C/C++ 函数**禁止嵌套定义**，但是**必须嵌套调用**，
+
+因此**必须有main函数**作为程序入口。(不像Python)
+
+编译系统写好一套东西，让main函数被系统调用，这样程序才跑起来。
+
+
+
+## 3 delete point
+
+delete point 是将指针与所指地址取消关联，类似于撕户口本。
+
+
+
