@@ -240,74 +240,11 @@ cd 目录，查看使用方法
 	    --os-cmd=OSCMD      Execute an operating system command
 	    --os-shell          Prompt for an interactive operating system shell
 	    --os-pwn            Prompt for an OOB shell, Meterpreter or VNC
-	    --os-smbrelay       One click prompt for an OOB shell, Meterpreter or VNC
-	    --os-bof            Stored procedure buffer overflow exploitation
-	    --priv-esc          Database process user privilege escalation
-	    --msf-path=MSFPATH  Local path where Metasploit Framework is installed
-	    --tmp-path=TMPPATH  Remote absolute path of temporary files directory
-	
-	  Windows registry access:
-	    These options can be used to access the back-end database management
-	    system Windows registry
-	
-	    --reg-read          Read a Windows registry key value
-	    --reg-add           Write a Windows registry key value data
-	    --reg-del           Delete a Windows registry key value
-	    --reg-key=REGKEY    Windows registry key
-	    --reg-value=REGVAL  Windows registry key value
-	    --reg-data=REGDATA  Windows registry key value data
-	    --reg-type=REGTYPE  Windows registry key value type
-	
-	  General:
-	    These options can be used to set some general working parameters
-	
-	    -s SESSIONFILE      Load session from a stored (.sqlite) file
-	    -t TRAFFICFILE      Log all HTTP traffic into a textual file
-	    --answers=ANSWERS   Set predefined answers (e.g. "quit=N,follow=N")
-	    --batch             Never ask for user input, use the default behavior
-	    --binary-fields=..  Result fields having binary values (e.g. "digest")
-	    --check-internet    Check Internet connection before assessing the target
-	    --cleanup           Clean up the DBMS from sqlmap specific UDF and tables
-	    --crawl=CRAWLDEPTH  Crawl the website starting from the target URL
-	    --crawl-exclude=..  Regexp to exclude pages from crawling (e.g. "logout")
-	    --csv-del=CSVDEL    Delimiting character used in CSV output (default ",")
-	    --charset=CHARSET   Blind SQL injection charset (e.g. "0123456789abcdef")
-	    --dump-format=DU..  Format of dumped data (CSV (default), HTML or SQLITE)
-	    --encoding=ENCOD..  Character encoding used for data retrieval (e.g. GBK)
-	    --eta               Display for each output the estimated time of arrival
-	    --flush-session     Flush session files for current target
-	    --forms             Parse and test forms on target URL
-	    --fresh-queries     Ignore query results stored in session file
-	    --gpage=GOOGLEPAGE  Use Google dork results from specified page number
-	    --har=HARFILE       Log all HTTP traffic into a HAR file
-	    --hex               Use hex conversion during data retrieval
-	    --output-dir=OUT..  Custom output directory path
-	    --parse-errors      Parse and display DBMS error messages from responses
-	    --preprocess=PRE..  Use given script(s) for preprocessing of response data
-	    --repair            Redump entries having unknown character marker (?)
-	    --save=SAVECONFIG   Save options to a configuration INI file
-	    --scope=SCOPE       Regexp to filter targets from provided proxy log
-	    --skip-waf          Skip heuristic detection of WAF/IPS protection
-	    --table-prefix=T..  Prefix used for temporary tables (default: "sqlmap")
-	    --test-filter=TE..  Select tests by payloads and/or titles (e.g. ROW)
-	    --test-skip=TEST..  Skip tests by payloads and/or titles (e.g. BENCHMARK)
-	    --web-root=WEBROOT  Web server document root directory (e.g. "/var/www")
-	
-	  Miscellaneous:
-	    These options do not fit into any other category
-	
-	    -z MNEMONICS        Use short mnemonics (e.g. "flu,bat,ban,tec=EU")
-	    --alert=ALERT       Run host OS command(s) when SQL injection is found
-	    --beep              Beep on question and/or when SQL injection is found
-	    --dependencies      Check for missing (optional) sqlmap dependencies
-	    --disable-coloring  Disable console output coloring
-	    --list-tampers      Display list of available tamper scripts
-	    --offline           Work in offline mode (only use session data)
-	    --purge             Safely remove all content from sqlmap data directory
-	    --sqlmap-shell      Prompt for an interactive sqlmap shell
-	    --tmp-dir=TMPDIR    Local directory for storing temporary files
-	    --update            Update sqlmap
-	    --wizard            Simple wizard interface for beginner users
+	    --os-smbrelay       One click prompt for an OOB shell, Meterpreter or 
+	    xxx
+	    ...
+	    ...
+	    ...
     
 ### 2.2 指到注入目标 -u 
 
@@ -355,22 +292,15 @@ cd 目录，查看使用方法
 	current database: 'itapidb'
 	[11:46:17] [INFO] fetching database names
 	available databases [16]:
-	[*] canteen
-	[*] coll_fm
 	[*] db_platform
 	[*] information_schema
 	[*] itapidb
-	[*] itcloud_billing
 	[*] mysql
 	[*] performance_schema
 	[*] sys
 	[*] tests
-	[*] yktpt_access
-	[*] yktpt_accessproxy
-	[*] yktpt_idcenter
-	[*] yktpt_idpm
-	[*] yktpt_portal
-	[*] yktpt_timerec
+	...
+	...
 	
 	[11:46:17] [INFO] fetched data logged to text files under '/Users/didi/.sqlmap/output/172.20.201.203'
 	
@@ -390,28 +320,13 @@ cd 目录，查看使用方法
 	+---------------------------------------+
 	| apis_basemailgroupmodel               |
 	| apis_basemailmodel                    |
-	| apis_basemailvpnmodel                 |
-	| apis_depmailcreatemodel               |
-	| apis_depmaildeletemodel               |
-	| apis_depmaildescriptionmodel          |
-	| apis_depmaildisplaynamemodel          |
-	| apis_depmailenablemodel               |
-	| apis_depmailexistmodel                |
+	...
+	...
 	| apis_depmailjobmodel                  |
 	| apis_mailcapacitionmodel              |
 	| apis_mailgroupcreatemodel             |
-	| apis_mailgroupdisplaynamemodel        |
-	| apis_mailgroupmanagedbymodel          |
-	| apis_mailgroupmemberbatchmodel        |
-	| apis_mailgroupmembermodel             |
-	| apis_mailgroupmembersgetmodel         |
-	| apis_mailpasswdresetmodel             |
-	| apis_mailpasswdupdatemodel            |
-	| apis_mailsendgroupmodel               |
-	| apis_vpngroupmodel                    |
-	| apis_vpninternsmodel                  |
-	| apis_vpnnotechnicalstaffmodel         |
-	| apis_vpnoutsourcemodel                |
+	...
+	...
 	| auth_group                            |
 	| auth_group_permissions                |
 	| auth_permission                       |
@@ -421,8 +336,8 @@ cd 目录，查看使用方法
 	| django_admin_log                      |
 	| django_content_type                   |
 	| django_migrations                     |
-	| django_session                        |
-	| rest_framework_tracking_apirequestlog |
+	...
+	...
 	| supervision_apismodel                 |
 	+---------------------------------------+
 	
@@ -583,8 +498,9 @@ cd 目录，查看使用方法
 
 有问题是后两个action，后面两个SQL查询使用 
 
- 	SQLcmd = "{0} {1}".format(args1,args2)
- 	db.execute(SQLcmd)
+
+	SQLcmd = "{0} {1}".format(args1,args2)
+	db.execute(SQLcmd)
  	
  没有使用Django ORM
  
@@ -592,21 +508,26 @@ cd 目录，查看使用方法
  
  安装`Django ORM`形式执行SQL命令，正如 action 一 ：
  
-  	SQLcmd = "%s %s"
- 	db.execute(SQLcmd,[args1,args2])
  
+	SQLcmd = "%s %s"
+	db.execute(SQLcmd,[args1,args2])
+ 	
  
-** 注意注意**：
+**注意注意**：
  
  如果参数是整数，必须换成整数，不然汇报如下错误：
  
+ 
  	You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near  at line 1
+ 	
  	
  原因在于：
  
  `limit` 后必须跟整数，但是浏览器get传输的 `topCount` 是字符串，所以必须要：
  
+ 
  	topCount = int(self.request.query_params.get('topCount'))
+ 
  
 修复后代码：
 
