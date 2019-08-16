@@ -518,15 +518,15 @@ cd 目录，查看使用方法
  如果参数是整数，必须换成整数，不然汇报如下错误：
  
  
- 	You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near  at line 1
+	You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near  at line 1
  	
  	
  原因在于：
  
  `limit` 后必须跟整数，但是浏览器get传输的 `topCount` 是字符串，所以必须要：
  
- 
- 	topCount = int(self.request.query_params.get('topCount'))
+ 	
+	topCount = int(self.request.query_params.get('topCount'))
  
  
 修复后代码：
