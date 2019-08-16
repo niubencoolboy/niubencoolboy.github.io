@@ -7,6 +7,7 @@ header-img : "img/post-bg-os-metro.jpg"
 tags:
     - 攻击工具
     - 安全
+    - Python
        
 ---
 
@@ -521,4 +522,164 @@ cd 目录，查看使用方法
 	
 	
 这里密码做了隐藏，将表的内容dump下来，发现存在`admin`用户，密码是经过`Django` `pbkdf2_sha256`加密的。可以通过Django的加密，对比进行密码破解。
+
+### Sqlmap 更多命令
+
+可以参考一个博客：
+
+[https://vul-hunters.oschina.io/hunter-blogs/posts/sec-tools-sqlmap/]()
+
+## 3 漏洞分析
+
+源代码：
+
+	class ApisRecordView(APIView):
+		def get(self,request,*args,**kwargs):
+			#sqlcmd = "SELECT * FROM rest_framework_tracking_apirequestlog where status_code != 200"
+			queryMinId = int(self.request.query_params.get('queryMinId'))
+			queryMaxId = int(self.request.query_params.get('queryMaxId'))
+			hasIdNumber = int(self.request.query_params.get('hasIdNumber'))
+			eachQueryNumber = int(self.request.query_params.get('eachQueryNumber'))
+			queryMethod = self.request.query_params.get('method')
+			SqlQuertUp = "SELECT * FROM rest_framework_tracking_apirequestlog where method = %s AND id > %s ORDER BY id DESC"
+			
+			sqlQueryNewestRecords = dbOperate.execute(SqlQuertUp,[queryMethod,queryMinId])
+			if(sqlQueryNewestRecords) :
+				queryMinId = sqlQueryNewestRecords[0]["id"]
+
+			xxx
+			return response
+
+	class ApisDashboardViewSet(viewsets.ModelViewSet):
+		queryset = ApisModel.objects.all()
+		serializer_class = ApisSerializer
+
+		@action(detail=False, methods=['GET'], url_path='frequency', url_name="dashboard_frequency")
+		def frequency(self,request, *args, **kwargs) :
+			contentList = []
+			queryMethod = self.request.query_params.get('method')
+			topCount = self.request.query_params.get('topCount')
+			sqlQueryTopCount = "SELECT path as itemPath, count(*) as count from rest_framework_tracking_apirequestlog  WHERE method = '{0}' GROUP BY path ORDER BY count DESC LIMIT {1};".format(queryMethod,topCount)
+			sqlExecResult = dbmodel().execute(sqlQueryTopCount)
+			if(sqlExecResult) :
+				contentList = sqlExecResult
+			xxxxx
+			return response
+
+		@action(detail=False, methods=['GET'], url_path='typetopcount', url_name="dashboard_typetopcount")
+		def typetopcount(self,request, *args, **kwargs) :
+			contentList = []
+			queryMethod = self.request.query_params.get('method')
+			topCount = self.request.query_params.get('topCount')
+			sqlQueryMailTopCount = "SELECT path as itemPath, count(*) as count FROM rest_framework_tracking_apirequestlog where method = '{0}' AND path REGEXP '^/mail/' GROUP BY path ORDER BY count DESC LIMIT {1};".format(queryMethod,topCount)
+			dbOperate = dbmodel()
+			sqlExecMailResult = dbOperate.execute(sqlQueryMailTopCount)
+			if(sqlExecMailResult) :
+				for itemDict in sqlExecMailResult :
+					itemDict['apiType'] = "邮箱"	
+			xxxxx
+			
+			return response
+
+有问题是后两个action，后面两个SQL查询使用 
+
+ 	SQLcmd = "{0} {1}".format(args1,args2)
+ 	db.execute(SQLcmd)
+ 	
+ 没有使用Django ORM
+ 
+## 4 漏洞修复
+ 
+ 安装`Django ORM`形式执行SQL命令，正如 action 一 ：
+ 
+  	SQLcmd = "%s %s"
+ 	db.execute(SQLcmd,[args1,args2])
+ 
+ 
+** 注意注意**：
+ 
+ 如果参数是整数，必须换成整数，不然汇报如下错误：
+ 
+ 	You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near  at line 1
+ 	
+ 原因在于：
+ 
+ `limit` 后必须跟整数，但是浏览器get传输的 `topCount` 是字符串，所以必须要：
+ 
+ 	topCount = int(self.request.query_params.get('topCount'))
+ 
+修复后代码：
+
+	class ApisRecordView(APIView):
+		def get(self,request,*args,**kwargs):
+			#sqlcmd = "SELECT * FROM rest_framework_tracking_apirequestlog where status_code != 200"
+			queryMinId = int(self.request.query_params.get('queryMinId'))
+			queryMaxId = int(self.request.query_params.get('queryMaxId'))
+			hasIdNumber = int(self.request.query_params.get('hasIdNumber'))
+			eachQueryNumber = int(self.request.query_params.get('eachQueryNumber'))
+			queryMethod = self.request.query_params.get('method')
+			SqlQuertUp = "SELECT * FROM rest_framework_tracking_apirequestlog where method = %s AND id > %s ORDER BY id DESC"
+			
+			sqlQueryNewestRecords = dbOperate.execute(SqlQuertUp,[queryMethod,queryMinId])
+			if(sqlQueryNewestRecords) :
+				queryMinId = sqlQueryNewestRecords[0]["id"]
+
+			xxx
+			return response
+
+	class ApisDashboardViewSet(viewsets.ModelViewSet):
+		queryset = ApisModel.objects.all()
+		serializer_class = ApisSerializer
+
+		@action(detail=False, methods=['GET'], url_path='frequency', url_name="dashboard_frequency")
+		def frequency(self,request, *args, **kwargs) :
+			contentList = []
+			queryMethod = self.request.query_params.get('method')
+			topCount = int(self.request.query_params.get('topCount'))
+			sqlQueryTopCount = "SELECT path as itemPath, count(*) as count from rest_framework_tracking_apirequestlog  WHERE method = %s GROUP BY path ORDER BY count DESC LIMIT %s;"
+			sqlExecResult = dbmodel().execute(sqlQueryTopCount,[queryMethod, topCount])
+			if(sqlExecResult) :
+				contentList = sqlExecResult
+			xxxxx
+			return response
+
+		@action(detail=False, methods=['GET'], url_path='typetopcount', url_name="dashboard_typetopcount")
+		def typetopcount(self,request, *args, **kwargs) :
+			contentList = []
+			queryMethod = self.request.query_params.get('method')
+			topCount = int(self.request.query_params.get('topCount'))
+			sqlQueryMailTopCount = "SELECT path as itemPath, count(*) as count FROM rest_framework_tracking_apirequestlog where method = %s AND path REGEXP '^/mail/' GROUP BY path ORDER BY count DESC LIMIT %s;"
+			dbOperate = dbmodel()
+			sqlExecMailResult = dbOperate.execute(sqlQueryMailTopCount, [queryMethod, topCount])
+			if(sqlExecMailResult) :
+				for itemDict in sqlExecMailResult :
+					itemDict['apiType'] = "邮箱"	
+			xxxxx
+			
+			return response
+			
+##  5 修复后再验证
+
+### 首先清除上次`SQLmap`的缓存：
+方法一：使用`--flush-session` `--fresh-queries`
+
+方法二：直接删除`sqlmap` `output`文件夹下的`对应的IP`目录
+
+	python sqlmap.py -u http://172.20.201.203:9000/apis/dashboard/typetopcount\?method\=POST\&topCount\=3 --flush-session --fresh-queries
+
+### 检验是否修复成功
+
+	python sqlmap.py -u http://172.20.201.203:9000/apis/dashboard/typetopcount\?method\=POST\&topCount\=3 -v 3 --threads=4
+	
+	[17:54:29] [WARNING] GET parameter 'topCount' does not seem to be injectable
+	[17:54:29] [CRITICAL] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent'
+
+可以看到，目前并没有探测到SQL注入点，将`level`、`risk`设为最大，再次探测：
+
+	[18:24:11] [WARNING] parameter 'topCount' does not seem to be injectable
+	[18:24:11] [CRITICAL] all tested parameters do not appear to be injectable. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent'
+
+可以发现，已经探测不错来了。证明修复成功。
+
+
 
