@@ -65,7 +65,7 @@ XSS 全称(Cross Site Scripting) 跨站脚本攻击， 是Web程序中最常见�
 
 比如攻击者将如下链接发送给受害者：
 
-http://www.targetserver.com/search.asp?input=<script>alert("Hello,XSS!");</script>
+http://www.johan.vip/img?input=<script>alert("Hello,XSS!");</script>
 
 当受害者点击这个链接的时候，注入的脚本被当作搜索的关键词发送到目标服务器的search.asp页面中，则在搜索结果的返回页面中，这段脚本将被当作搜索的关键词而嵌入。这样，当用户得到搜索结果页面后，这段脚本也得到了执行。这就是反射型XSS攻击的原理，可以看到，攻击者巧妙地通过反射型XSS的攻击方式，达到了在受害者的浏览器上执行脚本的目的。
 
