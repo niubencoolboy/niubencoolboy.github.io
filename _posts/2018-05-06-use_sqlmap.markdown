@@ -385,7 +385,7 @@ cd 目录，查看使用方法
 	
 	
 
-### 2.7 获取数据库表内容 ----dump
+### 2.7 获取数据库表内容 --dump
 
 	python sqlmap.py -u http://172.20.201.203:9000/apis/dashboard/typetopcount\?method\=POST\&topCount\=3 -D 'itapidb' -T 'auth_user' --dump
 	        ___
@@ -506,7 +506,7 @@ cd 目录，查看使用方法
  
 ## 4 漏洞修复
  
- 安装`Django ORM`形式执行SQL命令，正如 action 一 ：
+ 按照`Django ORM`形式执行SQL命令，正如 action 1 ：
  
  
 	SQLcmd = "%s %s"
@@ -600,7 +600,7 @@ cd 目录，查看使用方法
 	[18:24:11] [WARNING] parameter 'topCount' does not seem to be injectable
 	[18:24:11] [CRITICAL] all tested parameters do not appear to be injectable. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent'
 
-可以发现，已经探测不错来了。证明修复成功。
+可以发现，已经探测不出来了。证明修复成功。
 
 
 
