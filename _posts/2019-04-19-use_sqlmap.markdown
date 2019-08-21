@@ -442,7 +442,7 @@ cd 目录，查看使用方法
 
 可以参考一个博客：
 
-[https://vul-hunters.oschina.io/hunter-blogs/posts/sec-tools-sqlmap/]()
+[https://vul-hunters.oschina.io/hunter-blogs/posts/sec-tools-sqlmap/](https://vul-hunters.oschina.io/hunter-blogs/posts/sec-tools-sqlmap/)
 
 ## 3 漏洞分析
 

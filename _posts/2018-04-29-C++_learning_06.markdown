@@ -51,7 +51,7 @@ this指向当前对象的指针。
 
 友元机制允许一个类将对其非公有成员的访问权限授予指定的函数或类。
 
-详细见别人的博客：[https://n3verl4nd.iteye.com/blog/2362279]()
+详细见别人的博客：[https://n3verl4nd.iteye.com/blog/2362279](https://n3verl4nd.iteye.com/blog/2362279)
 
 ## 4 方法论
 

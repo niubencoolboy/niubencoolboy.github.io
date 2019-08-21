@@ -86,8 +86,8 @@ main()函数执行完毕，控制权交回给Startup，进行反初始化动作�
 
 引用与参考：
 
-* [https://n3verl4nd.iteye.com/blog/2362309]()
-* [http://blog.csdn.net/huang_xw/article/details/8542105]()
+* [https://n3verl4nd.iteye.com/blog/2362309](https://n3verl4nd.iteye.com/blog/2362309)
+* [http://blog.csdn.net/huang_xw/article/details/8542105](http://blog.csdn.net/huang_xw/article/details/8542105)
 
 ## 3 静态数据在被加载到内存
 
