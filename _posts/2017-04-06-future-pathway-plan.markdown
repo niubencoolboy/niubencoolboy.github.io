@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "生涯规划笔记"
+title: "日记——未来之路"
 date: 2017-06-06 23:00:00
 author: "John Niu"
 header-img: "img/post-bg-study.jpg" 
