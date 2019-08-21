@@ -26,7 +26,7 @@ tags:
 ## 1.2 实例
 见上一篇博客：
 
-[http://johan.vip/2019/04/19/use_sqlmap/](使用SQLMAP进行SQL注入实战)
+[http://johan.vip/2019/04/19/use_sqlmap/]()
 
 ### 1.3 防御
 
