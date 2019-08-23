@@ -6,7 +6,7 @@ author: "Johan Niu"
 header-img : "img/blogs/c++_logo.jpg"
 tags:
     - 学习
-    - C++
+    - C/C++
        
 ---
 
