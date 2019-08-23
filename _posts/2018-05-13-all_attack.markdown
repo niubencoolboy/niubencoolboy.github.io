@@ -69,7 +69,7 @@ DDoS攻击通常采用一对多控制僵尸网络，然后多对一发起攻击�
 
 SYN Flood 就是用户向服务器发送报文后突然死机或掉线，那么服务器在发出应答报文后就无法收到客户端的确认报文（第三次握手无法完成），这时服务器端一般会重试并等待一段时间后再丢弃这个未完成的连接。一个用户出现异常导致服务器的一个线程等待一会儿并不是大问题，但恶意攻击者大量模拟这种情况，服务器端为了维护数以万计的半连接而消耗非常多的资源，结果往往是无暇理睬客户的正常请求，甚至崩溃。
 
-![](http://niubencoolboy.github.io/img/attack/synflood.png)
+![](http://niubencoolboy.github.io/img/attack/synflood.jpg)
 
 
 #### 2.3.1 ICMP Flood
@@ -92,7 +92,7 @@ NTP是标准的基于UDP协议传输的网络时间同步协议，由于UDP协�
 
 因此，“问-答”方式的协议都可以被反射型攻击利用，将质询数据包的地址伪造为攻击目标地址，应答的数据包就会都被发送至目标，一旦协议具有递归效果，流量就被显著放大了，堪称一种“借刀杀人”的流量型攻击。
 
-![](http://niubencoolboy.github.io/img/attack/ntpflood.png)
+![](http://niubencoolboy.github.io/img/attack/ntpflood.jpg)
 
 #### 放大攻击 如 DNS Query Flood
 
@@ -104,7 +104,7 @@ DNS Query Flood采用的方法是操纵大量傀儡机器，向目标服务器�
 
 一台DNS服务器所能承受的动态域名查询的上限是每秒钟9000个请求。而一台P3的PC机上可以轻易地构造出每秒钟几万个域名解析请求，足以使一台硬件配置极高的DNS服务器瘫痪，由此可见DNS服务器的脆弱性。
 
-![](http://niubencoolboy.github.io/img/attack/dnsflood.png)
+![](http://niubencoolboy.github.io/img/attack/dnsflood.jpg)
 
 
 
