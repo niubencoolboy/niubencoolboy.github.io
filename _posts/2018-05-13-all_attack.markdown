@@ -17,11 +17,21 @@ tags:
 
 ### 1.1 原理
 
-### 1.2 分类
+[https://zhuanlan.zhihu.com/p/28771785](https://zhuanlan.zhihu.com/p/28771785)
 
-劫持
+①ARP缓存表基于"后到优先"原则，IP与MAC的映射信息能被覆盖；
 
-### 1.3 防御
+②ARP攻击基于伪造的ARP回应包，黑客通过构造"错位"的IP和MAC映射，覆盖主机的ARP表（也被称为"ARP毒化"），最终截取用户的数据流；
+
+③一旦遭受ARP攻击，账号密码都可能被窃取（如果通信协议不是加密的）；
+
+④通过Wireshark数据包分析，我们掌握了真实网络中ARP底层攻击原理及数据包组成。
+
+[https://zhuanlan.zhihu.com/p/28818627](https://zhuanlan.zhihu.com/p/28818627)
+
+### 1.2 防御
+
+[https://zhuanlan.zhihu.com/p/28865553](https://zhuanlan.zhihu.com/p/28865553)
 
 
 ## 2 DDOS
@@ -41,5 +51,9 @@ tags:
 ## 4 端口扫描
 
 常用端口扫描工具以及使用
+
+## 5 弱口令扫描
+
+hydra
 
 ## 5 APT
