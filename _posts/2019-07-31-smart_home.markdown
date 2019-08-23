@@ -29,7 +29,7 @@ tags:
 
 最终的设想就是可以语音控制家里的空调、网络电视、音箱等尽可能多的电器设备，实现简易的智能家居系统。
 
-[Demo演示](http://niubencoolboy.github.io/videos/智能家居简易演示.mp4)
+[Demo演示](http://niubencoolboy.github.io/videos/smart_home_demo.mp4)
 
 ​
 ## 二 实施
