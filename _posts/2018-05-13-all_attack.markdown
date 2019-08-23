@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "各种攻击原理以及防御方法"
+title: "常见攻击方式原理以及防御方法"
 date: 2018-05-13 20:00:00
 author: "Johan Niu"
 header-img : "img/post-bg-os-metro.jpg"
@@ -11,7 +11,7 @@ tags:
        
 ---
 
-# 各种攻击原理以及防御方法
+# 常见攻击方式原理以及防御方法
 
 ## 1 ARP
 
@@ -106,10 +106,14 @@ DNS Query Flood采用的方法是操纵大量傀儡机器，向目标服务器�
 
 ![](http://niubencoolboy.github.io/img/attack/dnsflood.jpg)
 
+#### Land攻击
 
+这种攻击方式与SYN floods类似，不过在LAND攻击包中的原地址和目标地址都是攻击对象的IP。
 
+这种攻击会导致被攻击的机器死循环，最终耗尽资源而死机。
 
-* Land攻击
+具体来讲，伪造包将导致接受服务器向它自己的地址发送SYN一ACK消息，结果这个地址又发回ACK消息并创建一个空连接，每一个这样的连接都将保留直到超时，从而大量的长时间的占用系统资源；
+
 * Smurf攻击
 
 
