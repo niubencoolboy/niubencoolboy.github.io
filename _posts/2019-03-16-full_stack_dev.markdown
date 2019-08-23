@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "对FreeRadius二次开发整套系统搭建"
+title: "搭建Django+VUE全栈开发框架"
 date: 2019-03-16 20:00:00
 author: "Johan Niu"
 header-img : "img/post-bg-os-metro.jpg"
@@ -9,7 +9,7 @@ tags:
        
 ---
 
-# 搭建全栈开发框架
+# 搭建Django+VUE全栈开发框架
 
 该开发框架前端基于Vue，后端基于Django，所以该项目可以跨平台，不论是什么操作系统，安装Node.js与Python即可开启项目的搭建与开发。搭建环境分为三大块：
 

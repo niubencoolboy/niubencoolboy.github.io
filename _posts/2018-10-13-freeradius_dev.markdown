@@ -509,7 +509,7 @@ daloRADIUS的官网：[http://www.daloradius.com/]()
 	
 ## 九  登录daloradius
 
-默认的管理员的用户名是administrator，密码是radius。
+默认的管理员的用户名是administrator，密码是xxx。
 
 ![主界面](http://niubencoolboy.github.io/img/blogs/daloraidius_index.png)
 
