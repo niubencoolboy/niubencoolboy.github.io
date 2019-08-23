@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "linux 下安装 dsniff"
+title: "dsniff介绍与Linux下安装"
 date: 2017-04-06 21:23:00
 author: "John Niu"
 header-img: "img/post-bg-os-metro.jpg"
@@ -9,8 +9,24 @@ tags:
     - 攻击工具     
 ---
 
+## dsniff简介
 
-## 在ubuntu14.04 下安装 dsniff 2.3
+Dsniff是一个基于unix系统网络嗅探工具，开发者Dub Song于2000年12月发布v2.3版本。
+
+下载地址：
+
+[http://www.monkey.org/~dugsong/dsniff](http://www.monkey.org/~dugsong/dsniff)
+
+Dsniff是一个工具集，主要分为四类：
+
+* 纯粹被动地进行网络活动监视的工具，包括：dsniff、filesnarf、mailsnarf 、msgsnarf、urlsnarf、webspy;
+* 针对SSH和SSL的MITM（Man-In-The-Middle）"攻击"工具，包括sshmitm和webmitm;
+* 发起主动欺骗的工具，包括：arpspoof、dnsspoof、macof;
+* 其它工具，包括tcpkill、tcpnice
+
+## Linux下dsniff的安装
+
+在 `ubuntu14.04` 下安装 `dsniff 2.3`
 
 ### 1. 安装Berkeley DB
 
