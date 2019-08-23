@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2018 小米IoT安全峰会参会纪要"
-date: 2019-12-01 20:00:00
+date: 2018-12-01 20:00:00
 author: "Johan Niu"
 header-img : "img/post-bg-os-metro.jpg"
 tags:
