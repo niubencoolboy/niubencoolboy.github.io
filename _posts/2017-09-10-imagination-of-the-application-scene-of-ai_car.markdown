@@ -2,10 +2,10 @@
 layout: post
 title: "未来无人驾驶汽车应用场景畅想"
 date: 2017-09-10 周日
-author: "John Niu"
+author: "Johan Niu"
 header-img : "img/cars/03.gif"
 tags:
-    - 无人驾驶
+    - 人工智能
     - 知乎
  
 ---
