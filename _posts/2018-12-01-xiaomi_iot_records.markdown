@@ -35,7 +35,7 @@ IoT 设计架构里有三个重点，调试接口、固件与存储，都是容�
 
 ### PPT
 
-![DEFCON26-Having_fun_with_IoT-Xiaomi](http://niubencoolboy.github.io/ppt/DEFCON26-Having_fun_with_IoT-Xiaomi.pdf)
+![http://niubencoolboy.github.io/ppt/DEFCON26-Having_fun_with_IoT-Xiaomi.pdf](http://niubencoolboy.github.io/ppt/DEFCON26-Having_fun_with_IoT-Xiaomi.pdf)
 
 ### 演讲题目：Beyond logical attacks 
 ### 演讲者：NXP首席安全技术主管Dr . Markus Hinkelmann
@@ -61,7 +61,7 @@ IoT 设计架构里有三个重点，调试接口、固件与存储，都是容�
 
 ### PPT
 
-![Beyond logical attacks](http://niubencoolboy.github.io/ppt/Beyond%20logical%20attacks%20-%20Markus%20Hinkelmann.pdf)
+![http://niubencoolboy.github.io/ppt/Beyond%20logical%20attacks%20-%20Markus%20Hinkelmann.pdf](http://niubencoolboy.github.io/ppt/Beyond%20logical%20attacks%20-%20Markus%20Hinkelmann.pdf)
 
 
 
