@@ -221,12 +221,37 @@ CC攻击（ChallengeCollapsar）又称作HTTP 泛洪攻击，其原理是攻击�
 
 ## 3 APT
 
-## 4 端口扫描
+##### 原理
 
-## 5 缓冲器溢出
+APT（Advanced Persistent Threat）是指高级持续性威胁，本质是针对性攻击。
 
-## 6 弱口令检测
+APT攻击可以大致分为探测期、入侵期、潜伏期、退出期4个阶段，这4个阶段通常是循序渐进的
 
-**4、5、6见博客：**
+* 长时间且多次攻击一个目标;
+* 传统的安全防护方案无力应对;
+* 学习目标系统的防护手段不断提升自身的攻击能力。
+
+##### 防御
+
+* 探测期：防止端口扫描等，弱口令等
+* 入侵期：采取基于异常检测的IDS实现，主要检测异常行为
+* 潜伏期：IDS/IPS，异常流量检测
+
+[APT攻击检测与防御详解](https://blog.csdn.net/qq_38232598/article/details/86564172)
+
+
+## 4 测试工具
+
+* iperf3(网卡性能测试)
+* trafgen[高性能流量生成工具trafgen(DDoS模拟)](http://www.ituring.com.cn/article/273988)
+* nmap/zmap(端口扫描)
+
+## 5 端口扫描
+
+## 6 缓冲器溢出
+
+## 7 弱口令检测
+
+**5、6、7见博客：**
 
 [几种攻击简单测试](http://niubencoolboy.github.io/2018/05/20/attack_-practice/)
