@@ -14,7 +14,7 @@ tags:
 
 **粗体**
 
-这是本人的博客 [Johan Niu](https://johan.vip)
+这是本人的博客 [Johan Niu](https://blog.johaniu.com)
 
 - 无序列表1
 - 无序列表2
