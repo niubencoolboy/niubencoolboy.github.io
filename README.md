@@ -1,8 +1,8 @@
 #John Niu
 
-###[View Live Johan Niu Blog &rarr;](https://johan.vip)
+###[View Live Johan Niu Blog &rarr;](http://blog.johaniu.top)
 
-![](http://johan.vip/img/404-bg.jpg)
+![](http://blog.johaniu.top/img/404-bg.jpg)
 
 ----------------------------------------------------------------------------------------------------------------------
 The Blog theme forked from [Huxpro/huxpro.github.io](https://github.com/Huxpro/huxpro.github.io)
